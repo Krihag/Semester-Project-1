@@ -30,20 +30,20 @@
 }
 
 .slide-1 {
-  background: url("../images/Nye-bilder/slider-img-1.jpg") no-repeat;
+  background: url("../images/slider-img-1.jpg") no-repeat;
   background-position: center bottom;
   opacity: 1;
   animation-delay: 0s;
 }
 
 .slide-2 {
-  background: url("../images/Nye-bilder/slider-img-2.jpg") no-repeat;
+  background: url("../images/slider-img-2.jpg") no-repeat;
   background-position: right bottom;
   animation-delay: 10s;
 }
 
 .slide-3 {
-  background: url("../images/Nye-bilder/slider-img-3.jpg") no-repeat;
+  background: url("../images/slider-img-3.jpg") no-repeat;
   background-position: right center;
   animation-delay: 20s;
 }
