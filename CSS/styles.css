@@ -1,0 +1,145 @@
+/* ROOT */
+:root {
+  /* COLOURS */
+  --header-background: #0a323f;
+
+  --logo-red: #9a4040;
+  --logo-yellow: #ae9824;
+  --logo-purple: #8b67d7;
+
+  --btn-orange: #9f4b27;
+
+  --body-text: #4b4b4b;
+}
+
+/* COLOURS picker */
+.logo p:nth-child(1) {
+  color: var(--logo-red);
+}
+
+.logo p:nth-child(2),
+.label-hamburger,
+nav a {
+  color: var(--logo-yellow);
+}
+
+.logo p:nth-child(3) {
+  color: var(--logo-purple);
+}
+
+p {
+  color: var(--body-text);
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav,
+.logo {
+  display: inline-block;
+}
+
+/* Margin reset */
+body,
+header,
+.margin-reset,
+.logo p {
+  margin: 0;
+}
+
+/* HEADER */
+
+header,
+nav {
+  background: var(--header-background);
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+.header-items-container,
+nav {
+  display: flex;
+  z-index: 100;
+}
+
+.header-items-container {
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-items-container > input,
+.label-hamburger {
+  display: none;
+}
+
+.hamburger-icon {
+  font-size: 2.5rem;
+}
+
+.logo {
+  padding: 20px 0;
+}
+
+.logo p::first-letter {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+/* NAVBAR */
+nav {
+  flex: 1;
+  justify-content: space-evenly;
+  max-width: 900px;
+  align-self: stretch;
+}
+
+nav a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NAV items active page */
+.active {
+  background: #16566a;
+  font-weight: bold;
+}
+
+/*MOBILE AND PADS */
+@media (max-width: 768px) {
+  /* HEADER */
+  .header-items-container {
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+  /* Nav bar */
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding: 60px 0 120px;
+  }
+  nav a {
+    display: block;
+    padding: 20px 10%;
+    margin: 10px auto;
+  }
+
+  /*Hamburger menu*/
+  .label-hamburger {
+    display: inline-block;
+  }
+
+  /* HAMBURGER MENU CLICKED */
+  #menu-checkbox:checked ~ nav {
+    display: block;
+  }
+}

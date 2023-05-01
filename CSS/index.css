@@ -1,0 +1,121 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+/* SLIDER */
+
+.slider-section {
+  background: rgba(10, 50, 63, 0.85);
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.slides {
+  max-width: 100%;
+  width: 900px;
+  height: 650px;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+  animation: slide 30s infinite;
+}
+
+.slide-1 {
+  background: url("../images/Nye-bilder/slider-img-1.jpg") no-repeat;
+  background-position: center bottom;
+  opacity: 1;
+  animation-delay: 0s;
+}
+
+.slide-2 {
+  background: url("../images/Nye-bilder/slider-img-2.jpg") no-repeat;
+  background-position: right bottom;
+  animation-delay: 10s;
+}
+
+.slide-3 {
+  background: url("../images/Nye-bilder/slider-img-3.jpg") no-repeat;
+  background-position: right center;
+  animation-delay: 20s;
+}
+
+/* OVERLAY / TEXT INSIDE IMG*/
+.sliders-overlay {
+  height: 55%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sliders-overlay > * {
+  margin: 0;
+}
+.slider-header {
+  font-weight: bold;
+
+  color: #fff;
+}
+
+.slider-young-stars {
+  color: #ffbe18;
+}
+
+.slider-text {
+  color: #999;
+  max-width: 300px;
+}
+
+.slider-event-time {
+  color: #fff;
+}
+.slider-event-time strong {
+  color: #1c7306;
+}
+
+.slider-read-more {
+  color: #7a85ec;
+  text-decoration: underline;
+}
+
+/* SLIDER ANIMATION*/
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*MOBILE ONLY */
+@media (max-width: 480px) {
+  .sliders-overlay {
+    font-size: 1.4rem;
+  }
+}
