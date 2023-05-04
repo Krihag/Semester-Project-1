@@ -4,12 +4,34 @@
   --header-background: #0a323f;
 
   --logo-red: #9a4040;
-  --logo-yellow: #ae9824;
+  --logo-yellow: #cfb947;
   --logo-purple: #8b67d7;
 
-  --btn-orange: #9f4b27;
+  --btn-orange: #91320a;
 
   --body-text: #4b4b4b;
+
+  --red-header: #8c2506;
+}
+
+/* UNIVERSAL SELECTOR */
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav,
+.logo {
+  display: inline-block;
 }
 
 /* COLOURS picker */
@@ -27,20 +49,17 @@ nav a {
   color: var(--logo-purple);
 }
 
+.red-text,
+h2,
+h3 {
+  color: var(--red-header);
+}
+
 p {
   color: var(--body-text);
 }
 
-header a {
-  text-decoration: none;
-}
-
-nav,
-.logo {
-  display: inline-block;
-}
-
-/* Margin reset */
+/* Margin Reset */
 body,
 header,
 .margin-reset,
@@ -59,6 +78,10 @@ header {
   font-size: 1.5rem;
 }
 
+header a {
+  text-decoration: none;
+}
+
 .header-items-container,
 nav {
   display: flex;
@@ -66,7 +89,7 @@ nav {
 }
 
 .header-items-container {
-  max-width: 1200px;
+  max-width: 950px;
   margin: auto;
   align-items: center;
   justify-content: space-around;
@@ -82,7 +105,11 @@ nav {
 }
 
 .logo {
-  padding: 20px 0;
+  padding: 15px 20px;
+}
+
+.logo p {
+  line-height: 1;
 }
 
 .logo p::first-letter {
@@ -96,6 +123,7 @@ nav {
   justify-content: space-evenly;
   max-width: 900px;
   align-self: stretch;
+  gap: 5%;
 }
 
 nav a {
@@ -111,8 +139,102 @@ nav a {
   font-weight: bold;
 }
 
+/* CTA BUTTON */
+
+.cta-btn {
+  text-decoration: none;
+  color: #fff;
+  background: var(--btn-orange);
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 7px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cta-btn:hover {
+  background: #e06e3d;
+  transition: 0.6s;
+}
+
+/* DIFFERENT BACKGROUND COLOURS / ARTICLE SECTIONS*/
+.different-background-colours-articles article:hover {
+  box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.2);
+}
+
+.different-background-colours-articles article:first-child {
+  background: #ffefdf;
+}
+
+.different-background-colours-articles article:first-child:hover {
+  background: #ffcea0;
+  transition: 0.7s;
+}
+
+.different-background-colours-articles article:nth-child(2) {
+  background: #ffffd7;
+}
+
+.different-background-colours-articles article:nth-child(2):hover {
+  background: #ffffa7;
+  transition: 0.7s;
+}
+
+.different-background-colours-articles article:nth-child(3) {
+  background: #ede4ff;
+}
+
+.different-background-colours-articles article:nth-child(3):hover {
+  background: #d4bfff;
+  transition: 0.7s;
+}
+
+.different-background-colours-articles article {
+  width: 90%;
+  margin: auto;
+  min-width: 250px;
+  max-width: 420px;
+  margin: 10px auto 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0.4px solid #f5f5f5;
+}
+
+.different-background-colours-articles article img {
+  height: 200px;
+  width: 95%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+/*MOBILE ONLY */
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+
+  header nav {
+    top: 95px;
+  }
+}
+
 /*MOBILE AND PADS */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* HEADER */
   .header-items-container {
     justify-content: space-between;
@@ -123,13 +245,13 @@ nav a {
     display: none;
     width: 100%;
     position: absolute;
-    top: 130px;
+    top: 105px;
     left: 0;
     padding: 60px 0 120px;
   }
   nav a {
     display: block;
-    padding: 20px 10%;
+    padding: 20px;
     margin: 10px auto;
   }
 

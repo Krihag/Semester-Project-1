@@ -1,0 +1,183 @@
+h1 {
+  font-size: 2.8rem;
+  color: #8c2506;
+}
+
+h2 {
+  color: #ffbe18;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  margin: 100px auto 30px;
+}
+h1,
+h2,
+h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+section {
+  padding: 100px 0 150px;
+}
+
+/* TOP OF PAGE NAVIGATION TO DIFFERENT SECTIONS WITHIN PAGE */
+
+.explore-nav-section {
+  background: #fff7cf;
+}
+
+.explore-nav-container {
+  max-width: 1050px;
+  margin: auto;
+
+  padding: 20px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.for-kids-nav {
+  background: url(../Images/virtual-glasses.jpg) no-repeat;
+}
+
+.for-teachers-nav {
+  background: url(../Images/teacher.JPG) no-repeat;
+}
+
+.for-scientists-nav {
+  background: url(../Images/scientist.JPG);
+}
+
+/* All images in explore nav */
+.explore-nav-img {
+  min-height: 350px;
+  display: flex;
+  align-items: start;
+  width: 350px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  text-decoration: none;
+  border: 0.5px solid #777;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.explore-nav-img-txt {
+  color: #fff;
+  background: #222;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+}
+
+.explore-nav-img:hover {
+  box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  border: 4px solid #f3ab27;
+  border-radius: 5px;
+}
+
+/* PROGRAMS FOR KIDS SECTION */
+
+.for-kids-sections {
+  margin: 0;
+  background: linear-gradient(#022a2cd9, #8cb1bdd9);
+  padding: 50px 0;
+}
+
+/* Programs for kids Header*/
+
+.programs-for-kids-header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header img*/
+.programs-for-kids-header img {
+  width: 1000px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+.header-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-text-container p {
+  margin-bottom: 10px;
+  color: #ddd;
+  text-align: center;
+  max-width: 370px;
+}
+
+/* Programs */
+.all-kids-programs .kids-program {
+  width: 350px;
+  max-width: 95%;
+
+  background: #eee;
+}
+
+.event-hours {
+  color: #2f9317;
+  font-weight: bold;
+}
+
+.kids-program a {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.kids-program img {
+  max-width: 90%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 1050px) {
+  .all-kids-programs {
+    display: flex;
+    max-width: 1200px;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* FOR TEACHERS */
+
+.for-teachers-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*MOBILE ONLY */
+@media (max-width: 480px) {
+}
+
+/*MOBILE AND PADS ONLY */
+@media (max-width: 800px) {
+  /* EXPLORE / NAVIGATION */
+  .explore-nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-nav-img {
+    min-height: 300px;
+    max-width: 100%;
+    margin: 25px auto;
+  }
+}
