@@ -21,7 +21,22 @@ h3 {
 }
 
 section {
-  padding: 100px 0 150px;
+  padding: 100px 0;
+  min-height: 100vh;
+}
+
+.back-to-top {
+  color: #786125;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+.back-to-top i {
+  margin-left: 20px;
 }
 
 /* TOP OF PAGE NAVIGATION TO DIFFERENT SECTIONS WITHIN PAGE */
@@ -31,13 +46,14 @@ section {
 }
 
 .explore-nav-container {
-  max-width: 1050px;
+  max-width: 1200px;
   margin: auto;
-
+  min-height: 550px;
   padding: 20px;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .for-kids-nav {
@@ -75,13 +91,6 @@ section {
   width: 100%;
 }
 
-.explore-nav-img:hover {
-  box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-  border: 4px solid #f3ab27;
-  border-radius: 5px;
-}
-
 /* PROGRAMS FOR KIDS SECTION */
 
 .for-kids-sections {
@@ -102,7 +111,7 @@ section {
 
 /* Header img*/
 .programs-for-kids-header img {
-  width: 1000px;
+  width: 1100px;
   margin-bottom: 30px;
   border-radius: 5px;
   min-height: 300px;
@@ -158,10 +167,142 @@ section {
 
 /* FOR TEACHERS */
 
+.for-teachers-section {
+  background: #e9e9e9;
+}
+
+.for-teachers-section h2 i,
+.for-teachers-section h3 i {
+  color: #3d935f;
+}
+
+.for-teachers-section h3 {
+  color: #786125;
+}
+
 .for-teachers-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
+
+.for-teachers-main {
+  max-width: 500px;
+  margin: 100px auto 150px;
+}
+
+.for-teachers-main > div {
+  margin: 70px auto;
+}
+
+.for-teachers-main img,
+.researchers-main img {
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  object-position: left;
+}
+
+.for-teachers-section h2 {
+  color: #1b2a34;
+}
+
+.teachers-get-in-touch {
+  margin-bottom: 50px;
+}
+
+/* CONTACT FORM*/
+
+.teachers-contact-form {
+  width: 400px;
+  max-width: 90%;
+  margin: 20px auto;
+  background: #1b2a34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 20px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.teachers-contact-form > div {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  max-width: 100%;
+}
+
+.teachers-contact-form input,
+.teachers-contact-form textarea {
+  padding: 7px 0;
+  margin: 5px 0 20px;
+}
+
+.teachers-contact-form button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #8c2506;
+}
+
+.teachers-contact-form label {
+  color: #c2c2c2;
+}
+
+.teachers-contact-form-and-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+
+  margin: auto;
+}
+
+.teachers-contact-form-and-text p {
+  width: 85%;
+  margin: auto;
+}
+
+.teachers-contact-form-and-text h4 {
+  text-align: center;
+  margin: 50px auto 0;
+  color: #8c2506;
+  margin: auto;
+}
+
+/* RESEARCHERS SECTION */
+.researchers-section {
+  background: #222;
+  margin: auto;
+}
+
+.researchers-section h2 i {
+  color: #ad4221;
+}
+
+.researchers-container {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.researchers-section p {
+  color: #fff;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.researchers-main {
+  max-width: 450px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+/* 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
 
 /*MOBILE ONLY */
 @media (max-width: 480px) {
@@ -172,12 +313,42 @@ section {
   /* EXPLORE / NAVIGATION */
   .explore-nav-container {
     flex-direction: column;
-    align-items: center;
   }
 
   .explore-nav-img {
     min-height: 300px;
     max-width: 100%;
-    margin: 25px auto;
+    margin: 15px auto;
+  }
+}
+
+/*MOBILE AND PADS ONLY */
+@media (min-width: 801px) {
+  /*HOVER EFFECT Explore nav (top of page)*/
+  .explore-nav-img:hover {
+    box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.4);
+    border: 3px solid #555;
+    border-radius: 5px;
+
+    min-height: 475px;
+    transition: 1s ease;
+  }
+
+  /* FOR TEACHERS */
+
+  .for-teachers-container {
+    margin-left: auto;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* RESEARCHERS*/
+  .researchers-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 2rem;
+    padding: 0 20px;
   }
 }

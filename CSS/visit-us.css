@@ -1,0 +1,51 @@
+.visit-info-welcome {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.visit-info-welcome img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* OPENING HOURS*/
+
+.opening-hours-open {
+  color: #1c7306;
+  font-weight: bold;
+}
+.opening-hours-closed {
+  color: #ac1616;
+  font-weight: bold;
+}
+
+.opening-hours-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 100px auto;
+  padding: 0 10px;
+}
+
+.opening-hours-container h2 {
+  font-size: 2rem;
+}
+
+.opening-hours-table th {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.opening-hours-table td {
+  padding: 5px 10px;
+}
+
+.opening-hours-table tr:nth-child(even) {
+  background: #daedff;
+}
