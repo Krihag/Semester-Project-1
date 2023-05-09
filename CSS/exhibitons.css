@@ -2,9 +2,6 @@ h2,
 figure {
   margin: 0;
 }
-/* body {
-  background: #ddd;
-} */
 
 .exhibition-spaces-section > article {
   margin: 150px auto;
@@ -33,12 +30,6 @@ figure {
   justify-content: center;
 }
 
-.exhibiton-space-container:nth-child(even) {
-  background: #ffe7a3;
-  border-radius: 30px;
-  padding: 20px 0;
-}
-
 .exhibition-space img {
   border-radius: 30px;
   width: 100%;
@@ -48,6 +39,22 @@ figure {
   object-position: left;
 }
 
+.cta-btn-exhibition {
+  background: #994a29;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 150px;
+  width: 500px;
+}
+
 .exhibition-space p {
   max-width: 450px;
+}
+
+/*MOBILE ONLY */
+@media (max-width: 480px) {
+  .exhibition-space img {
+    height: 170px;
+    border-radius: 5px;
+  }
 }

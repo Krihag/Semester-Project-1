@@ -1,6 +1,7 @@
 h2 {
   text-transform: uppercase;
   font-size: 1.7rem;
+  color: #0a323f;
 }
 
 h3,
@@ -9,7 +10,7 @@ h3,
 }
 
 h3 i {
-  color: #c1a82a;
+  color: #4b8955;
 }
 
 /* VISIT INFO */
@@ -21,15 +22,13 @@ h3 i {
 }
 
 .visit-info-container {
-  display: flex;
-  padding: 0 20px;
+  padding: 20px;
   max-width: 1600px;
   margin: auto;
-  justify-content: space-between;
 }
 
 .visit-info-container > article {
-  margin: 50px auto;
+  margin: 150px auto;
 }
 
 .visit-info-location {
@@ -110,4 +109,34 @@ h3 i {
 
 .admissions-article-container p {
   margin: 0;
+}
+
+/*  ACCESSIBILITY AND SHOPS */
+
+.accesibility-and-shops {
+  padding: 30px 20px;
+}
+
+.accesibility-and-shops > article {
+  max-width: 280px;
+  margin: 150px auto;
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 1200px) {
+  .visit-info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  /*  ACCESSIBILITY AND SHOPS */
+
+  .accesibility-and-shops {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    gap: 2rem;
+    padding: 0 20px;
+  }
 }
