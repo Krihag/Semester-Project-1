@@ -1,5 +1,12 @@
 h2 {
   text-transform: uppercase;
+  font-size: 3.5rem;
+  margin: 200px 0 100px;
+  font-weight: bolder;
+}
+
+h3 {
+  color: #0a323f;
 }
 
 /* GET INVOLVED HEADER*/
@@ -26,7 +33,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
 
-  background: #0a323f;
+  background: linear-gradient(#e3bd679c, #c79945de);
   padding: 20px 40px;
   box-shadow: 4px 6px 10px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
@@ -36,12 +43,11 @@ h2 {
 }
 
 .support-article h3 {
-  color: #cfb947;
   text-transform: uppercase;
 }
 
 .support-article p {
-  color: #f7f7f7;
+  line-height: 1.4;
 }
 
 .support-article img {

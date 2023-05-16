@@ -1,7 +1,5 @@
 h2 {
   text-transform: uppercase;
-  font-size: 1.7rem;
-  color: #0a323f;
 }
 
 h3,
@@ -16,7 +14,6 @@ h3 i {
 /* VISIT INFO */
 
 .visit-info-section {
-  background: #fbfbfb;
   margin: 100px 0;
   padding-top: 50px;
 }
@@ -28,11 +25,18 @@ h3 i {
 }
 
 .visit-info-container > article {
-  margin: 150px auto;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(#e3bd679c, #c79945);
+  width: 100%;
+  max-width: 400px;
 }
 
-.visit-info-location {
-  max-width: 300px;
+.visit-info-container > article:hover {
+  background: #f1ca6f;
+  transition: 0.3s;
 }
 
 .visit-info-welcome {
@@ -58,18 +62,13 @@ h3 i {
 /* OPENING HOURS*/
 
 .opening-hours-open {
-  color: #1c7306;
   font-weight: bold;
 }
 .opening-hours-closed {
-  color: #ac1616;
   font-weight: bold;
 }
 
 .opening-hours-container {
-  width: 100%;
-  max-width: 320px;
-
   padding: 0 10px;
 }
 
@@ -84,10 +83,6 @@ h3 i {
   padding: 5px 10px;
 }
 
-.opening-hours-table tr:nth-child(even) {
-  background: #daedff;
-}
-
 /* ADMISSIONS */
 
 .admissions-article-container {
@@ -96,7 +91,7 @@ h3 i {
 
 .all-admissions-container {
   padding: 40px 30px;
-  background: #fff0f0;
+
   border-radius: 80px;
 }
 
@@ -122,8 +117,22 @@ h3 i {
   margin: 150px auto;
 }
 
+/* ICONS CONTAINERS */
+.visit-info-icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+.visit-info-icons-container i {
+  color: #7e4040;
+  font-size: 2.5rem;
+  padding: 30px;
+  background: #f3e8b4;
+  border-radius: 50%;
+  margin: 40px 0;
+}
+
 /* DESKTOP ONLY */
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .visit-info-container {
     display: flex;
     justify-content: space-between;

@@ -1,29 +1,25 @@
-h2,
-h3 {
-  text-align: center;
-}
-
 /* SLIDER */
 
 .slider-section {
-  background: linear-gradient(#0a323fd9, #234628d9);
   margin: 0;
-  padding: 20px 0 100px;
+  padding: 40px 10px 100px;
 }
 
 .slider-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
-  height: 650px;
+  height: 600px;
   position: relative;
   overflow: hidden;
+  border-radius: 100px;
+  border: 2px solid #0a323f;
 }
 
 .slides {
   max-width: 100%;
-  width: 900px;
-  height: 650px;
+  width: 950px;
+  height: 600px;
   background-size: cover;
   position: absolute;
   opacity: 0;
@@ -32,7 +28,7 @@ h3 {
 
 .slide-1 {
   background: url("../images/slider-img-1.jpg") no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   opacity: 1;
   animation-delay: 0s;
 }
@@ -51,9 +47,9 @@ h3 {
 
 /* OVERLAY / TEXT INSIDE IMG*/
 .sliders-overlay {
-  height: 55%;
+  height: 45%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   font-size: 1.5rem;
@@ -61,11 +57,11 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.sliders-overlay > * {
-  margin: 0 auto;
+.sliders-overlay p {
+  margin: 0 10px;
 }
 .slider-header {
   font-weight: bold;
@@ -73,21 +69,14 @@ h3 {
   color: #fff;
 }
 
-.slider-young-stars {
-  color: #ffbe18;
-}
-
 .slider-text {
-  color: #999;
-  width: 300px;
-  max-width: 85%;
+  color: #dfdfdf;
+  width: 340px;
+  max-width: 90%;
 }
 
 .slider-event-time {
   color: #fff;
-}
-.slider-event-time strong {
-  color: #1c7306;
 }
 
 .slider-read-more {
@@ -113,43 +102,17 @@ h3 {
   }
 }
 
-/* PROGRAMS AND ACTIVITES*/
-
-.programs-and-activites {
-  padding: 100px 0 50px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 60px;
-  color: #ffbe18;
-}
-
-.prog-activ-btns {
-  display: flex;
-  max-width: 900px;
-  margin: 0 auto;
-  column-gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0 10px;
-}
-
-.prog-activ-btns .cta-btn {
-  max-width: 95%;
-}
 /* ABOUT MUSEUM */
 
 h2 {
-  color: #0a323f;
+  color: #ffbe18;
   font-size: 2.5rem;
   font-weight: bolder;
-  text-transform: uppercase;
 }
 
 .about-museum-section {
   padding: 200px 0;
-  background: #c39b2d57;
+  background: #3e616c;
 }
 
 /* To all Articles in about museum*/
@@ -175,10 +138,13 @@ h2 {
   margin: 0 auto;
 }
 
+.about-museum-container article h3 {
+  color: #7e1f09;
+}
+
 /*EVENTS SECTION */
 
 .events-this-week {
-  background: linear-gradient(#0a323fd9, #234628d9);
   padding: 50px 10px;
 }
 
@@ -212,10 +178,10 @@ h2 {
   font-weight: bold;
 }
 
-.event-name-date span {
-  color: #44be25;
+.events-this-week h2 {
+  color: #0a323f;
 }
-.events-this-week h2,
+
 .events-this-week h3 {
   color: #ffbe18;
 }
@@ -258,7 +224,7 @@ h2 {
 
   .about-museum-container {
     flex-direction: column;
-    margin-top: 100px;
+    margin: 100px auto 0;
     gap: 0;
     max-width: 95%;
   }
@@ -278,14 +244,13 @@ h2 {
 @media (min-width: 801px) {
   /* SLIDER */
   .slider-container {
-    padding-top: 20px;
   }
 
   /* Text overlay*/
   .event-overlay {
     background: rgba(0, 0, 0, 0.65);
     position: absolute;
-    bottom: -130px;
+    bottom: -95px;
     padding: 10px;
   }
   /* Event Hovered*/
