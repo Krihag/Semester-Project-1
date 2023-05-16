@@ -1,7 +1,7 @@
 h2 {
   text-transform: uppercase;
   font-size: 3.5rem;
-  margin: 200px 0 100px;
+
   font-weight: bolder;
 }
 
@@ -14,6 +14,21 @@ h3 {
 .get-involved-header {
   text-align: center;
   font-size: 2rem;
+}
+
+.get-involved-header img {
+  max-height: 600px;
+  width: 1200px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.support-us-header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 200px 0 100px;
 }
 
 /* HOW TO SUPPORT US ARTICLES */
