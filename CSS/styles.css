@@ -3,9 +3,9 @@
   /* COLOURS */
   --header-background: #0a323f;
 
-  --logo-red: #b66743;
+  --logo-red: #eb7540;
   --logo-yellow: #cfb947;
-  --logo-purple: #8b67d7;
+  --logo-purple: #b095e9;
 
   --btn-orange: #994a29;
 
@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   font-size: 1.5rem;
   background: #fff1cc;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 img {
@@ -75,6 +75,7 @@ h2,
 h3,
 h4 {
   text-align: center;
+  font-family: "Alegreya", serif;
 }
 
 .red-text {

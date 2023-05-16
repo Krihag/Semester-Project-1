@@ -1,5 +1,4 @@
 h2 {
-  color: #ab833c;
   margin: 40px 20px;
 }
 
@@ -41,6 +40,10 @@ h2 {
 }
 
 .exhibition-spaces-section > article:nth-child(even) p {
+  color: #fff;
+}
+
+.exhibition-spaces-section > article:nth-child(even) h2 {
   color: #fff;
 }
 
