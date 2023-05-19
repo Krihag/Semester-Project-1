@@ -142,10 +142,75 @@ h2 {
   color: #7e1f09;
 }
 
+/* MAIN ARTICLES AND EVENTS THIS WEEK*/
+
+.main-articles-and-events-section {
+  display: flex;
+  width: 1500px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 95%;
+}
+
+/* MAIN ARTICLES */
+
+.articles-container {
+  margin: 100px auto;
+  width: 800px;
+  max-width: 100%;
+}
+
+.main-articles {
+  max-width: 670px;
+  margin: 100px auto 50px;
+  background: #ffe9ac;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffe9ac;
+}
+
+.main-articles a {
+  text-decoration: none;
+}
+
+.main-articles h4 {
+  color: #0a323f;
+}
+
+.main-articles p {
+  max-width: 90%;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.main-articles h4 {
+  margin: 10px 0 30px;
+}
+
+.main-articles img {
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* MAIN ARTICLE HOVER*/
+
+.main-articles:hover {
+  background: #fff;
+  border-color: #ffbe18;
+  transition: 0.8s ease-in-out;
+}
+
 /*EVENTS SECTION */
 
 .events-this-week {
   padding: 50px 10px;
+  background: linear-gradient(#e7b04dde, #f5d692);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 100px auto;
+  max-width: 100%;
 }
 
 .all-events-container {
@@ -153,6 +218,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+}
+
+.all-events-container a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .event-item {
@@ -163,6 +234,7 @@ h2 {
   position: relative;
   object-fit: cover;
   box-shadow: 7px 11px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .event-item img {
@@ -180,6 +252,7 @@ h2 {
 
 .events-this-week h2 {
   color: #0a323f;
+  margin-bottom: 80px;
 }
 
 .events-this-week h3 {
@@ -204,6 +277,7 @@ h2 {
 
 .all-events-btn-container {
   max-width: 100%;
+  margin-top: 100px;
 }
 
 /*MOBILE ONLY */
@@ -248,9 +322,9 @@ h2 {
 
   /* Text overlay*/
   .event-overlay {
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.75);
     position: absolute;
-    bottom: -95px;
+    bottom: -120px;
     padding: 10px;
   }
   /* Event Hovered*/
@@ -268,14 +342,5 @@ h2 {
     max-width: 1400px;
     justify-content: space-around;
     margin: auto;
-  }
-
-  .all-events-container {
-    flex-direction: row;
-    max-width: 1400px;
-    margin: 50px auto;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
   }
 }

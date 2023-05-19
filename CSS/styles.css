@@ -9,7 +9,7 @@
 
   --btn-orange: #994a29;
 
-  --body-text: #4b4b4b;
+  --body-text: #222;
 
   --red-header: #8c2506;
 }
@@ -274,7 +274,7 @@ footer {
   margin: auto;
 }
 
-.footer-contact-header {
+.footer-header {
   text-align: center;
   font-size: 1.7rem;
 
@@ -283,7 +283,6 @@ footer {
 
 .footer-contact-info {
   display: flex;
-  align-items: center;
 }
 
 .footer-contact-info p:first-child,
@@ -307,7 +306,7 @@ footer {
 .footer-icons-container {
   display: flex;
   gap: 2rem;
-  max-width: 250px;
+  max-width: 200px;
   margin: auto;
 }
 
@@ -316,6 +315,10 @@ footer {
   color: var(--logo-yellow);
 }
 
+.footer-copyright {
+  color: #fff;
+  margin-top: 40px;
+}
 /*
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -335,7 +338,7 @@ footer {
 }
 
 /*MOBILE AND PADS */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   /* HEADER */
 
   header {
