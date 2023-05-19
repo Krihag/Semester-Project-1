@@ -40,7 +40,7 @@
 }
 
 .slide-3 {
-  background: url("../images/slider-img-3.jpg") no-repeat;
+  background: url("../images/library.jpg") no-repeat;
   background-position: right center;
   animation-delay: 20s;
 }
@@ -324,7 +324,7 @@ h2 {
   .event-overlay {
     background: rgba(0, 0, 0, 0.75);
     position: absolute;
-    bottom: -120px;
+    bottom: -125px;
     padding: 10px;
   }
   /* Event Hovered*/
