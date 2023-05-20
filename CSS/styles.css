@@ -373,7 +373,9 @@ footer {
   .label-hamburger {
     display: inline-block;
   }
-
+  .text-hidden {
+    display: none;
+  }
   /* HAMBURGER MENU CLICKED */
   #menu-checkbox:checked ~ nav {
     display: block;
