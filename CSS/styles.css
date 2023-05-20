@@ -159,7 +159,7 @@ nav {
 nav {
   flex: 1;
   justify-content: space-evenly;
-  max-width: 800px;
+  max-width: 850px;
   align-self: stretch;
 }
 
